@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: AdaTAMP
+description: Multi-collaborative Task and Motion Planning with Feedback Loop
 img: assets/img/12.jpg
 importance: 1
 category: work
