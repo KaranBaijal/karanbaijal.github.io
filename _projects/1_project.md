@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AdaTAMP: Adaptive Task and Motion Planning with LLM-based Embodied Agents
+title: "AdaTAMP: Adaptive Task and Motion Planning with LLM-based Embodied Agents"
 description: Multi-collaborative Task and Motion Planning with Feedback Loop
 img: assets/img/12.jpg
 importance: 1
