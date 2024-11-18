@@ -20,7 +20,6 @@ To address these limitations, we present AdaTAMP, an LLM-based adaptive TAMP fra
     1. We present the AdaTAMP framework, which integrates symbolic task sequences with continuous motion planning to improve task execution for embodied agents in a multi-agent setting.
     2. We incorporate a self-feedback loop that allows for real-time corrections based on motion feedback to adapt to dynamic environmental changes.
     3. We perform a comprehensive analysis of the framework’s effectiveness in navigating and handling dynamic scenarios in household environments.
-\end{itemize}
 
 ## Methodology
 ### Task Planning
@@ -31,10 +30,11 @@ We use A* to determine shortest path to immplement the task and navigation in th
 
 ### Evaluation Methods
 We develop scenarios of increasing complexities for evaluation:
-1. Pick up an object
-2. Avoid an obstacle to pick up the object
-3. Choose person for whom its more convenient to pick up the object.
-4. Work with another person to complete a task
+
+    1. Pick up an object
+    2. Avoid an obstacle to pick up the object
+    3. Choose person for whom its more convenient to pick up the object.
+    4. Work with another person to complete a task
 
 
 <div class="row">
