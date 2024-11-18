@@ -1,80 +1,22 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: High-Energy Computational Physics
+description: Determining a Dark Matter Model through Computational Methods
 img:
 importance: 3
-category: fun
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Objective
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Boosted Decision Trees
+Since the spring of my junior year, I have been involved in experimental particle physics research on the Compact Muon Solenoid (CMS) experiment in Prof. Julia Thom-Levy’s lab. Under Ph.D. student Sam Bright-Thonney, I worked on a search for evidence of dark matter (DM) particles produced in proton-proton collisions at the Large Hadron Collider (LHC). To do so, I trained a machine learning model using boosted decision trees that analyzed large amounts of dark matter signal and Standard Model (SM) background data to determine features, such as momentum and missing energy, and feature values (cuts) that led to the clearest distinction between DM signal and SM backgrounds. As deliverables, I shared the code implementation, generated histograms to understand the model’s performance through signal purity, and analyzed the impact of individual input variables on discrimination power. 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+To supplement my research, I self-studied Griffith’s ‘Introduction to Elementary Particles’ and Buckley’s ‘Practical Collider Physics’ to strengthen my theoretical understanding. 
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## Isolation Metric
+After successfully completing this work, I began working on a new problem the group was facing. The DM model we are searching for predicts a pair of “isolated” electrons coming from the proton collision, meaning that there should be very few other particles measured nearby in the CMS detector. However, we observed minimal distinction between DM signals and SM backgrounds due to a flaw in how isolation is computed for low-momentum electrons. Thus, I began working on designing an algorithm to compute a corrected version of the isolation. I built on top of CERN’s existing public codebase and used specialized LHC physics analysis libraries to implement the algorithm. We expect the new isolation variable to improve signal vs. background discrimination 
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+## Publication
+We aim to publish this research in March 2025 detailing the algorithm’s development, its application to the CMS dataset, and the resulting limits on dark matter models. 
