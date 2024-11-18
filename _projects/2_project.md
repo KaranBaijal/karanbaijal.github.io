@@ -1,81 +1,29 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: FallUp Fall Detection Wearable
+description: Multi-Alert Fall-Detection Device for Senior Citizens
 img: assets/img/3.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
+## Objective
+One in four adults aged 65+ fall every year. I developed a multi-alert fall detection device for senior citizens. 
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Motivation
+My grandfather fell thrice last year. This really impacted me. The first time, my grandmother was on the other end of the house and my grandfather, unable to get up on his own, lay unattended for a long time and had to drag himself while bleeding profusely. My grandfather may have gotten immediate help had there been a bell he could ring on the other side of the house. The second time, my grandmother was taking a bath and the caretaker was in her room on another floor. My grandfather may have again gotten immediate help if the fall was automatically detected and a phone call was automatically sent to the caretaker.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+I started looking for existing solutions that could help my grandparents. I realised that falls are a big problem worldwide with one in four adults aged 65+ suffering a fall every year. However, current solutions are simply not up to the mark and don’t satisfy the needs of many families. I asked myself: How could I create a device that is portable, easy to use, and affordable such that it could help the 10 crore senior citizen population in India? This question led me to the FallUp Healthcare Band. The scale and severity of the problem which I was solving made me realise how important the FallUp band could be for the senior citizen community.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## FallUp Healthcare Device
+FallUp Healthcare Band is an affordable autonomous fall detection and multi-alert device. It is a wearable that automatically detects a fall and sends out alerts through phone calls, SMS, and a bell. It also has an SOS button.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The device stands out from other products as it alerts relatives within the house through a bell and relatives outside the house through a phone call rather than just messages or helplines (like 911 or company helplines). Since messages can be easily ignored, phone calls will enable faster assistance to the fallen individual as compared to messages. It also has an SOS button for emergencies other than falls, which performs the same aforementioned alerts. It is comparatively more affordable so that the device can benefit any senior citizen, irrespective of their economic background. 
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Recognition and Awards
+1. Silver Medal, National Pramerica Spirit of Community Awards: Awarded Silver Medal out of 3500 students in India
+2. Innovator of the Year Award (High School): Won the award for “Creativity and Original Thinking” out of me entire high school of 600 students.
+3. Interviewed on National Radio Channel for Social Impact
+4. Selected for mentorship by India's largest Healthcare Incubator - HealthStart.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+## Impact
