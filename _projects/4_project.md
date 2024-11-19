@@ -2,7 +2,7 @@
 layout: page
 title: High-Energy Computational Physics
 description: Determining a Dark Matter Model through Computational Methods
-img:/assets/img/LHCCollision.jpg
+img:assets/img/LHCCollision.jpg
 importance: 1
 category: work
 ---
