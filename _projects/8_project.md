@@ -5,7 +5,8 @@ description: an other project with a background image and giscus comments
 img: assets/img/9.jpg
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
+published: false
 ---
 
 Every project has a beautiful feature showcase page.
