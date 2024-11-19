@@ -2,7 +2,7 @@
 layout: page
 title: High-Energy Computational Physics
 description: Determining a Dark Matter Model through Computational Methods
-img:assets/img/LHCCollision.jpg
+img: assets/img/LHCCollision.jpg
 importance: 1
 category: work
 ---
@@ -12,7 +12,7 @@ category: work
         {% include figure.liquid loading="eager" path="assets/img/DMModels.png" title="DM Models" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
+<div class="caption">å
   Fig 1. Wide number of potential models to study Dark Matter
 </div>
 
