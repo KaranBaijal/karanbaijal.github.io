@@ -2,7 +2,7 @@
 layout: page
 title: FallUp Fall Detection Wearable
 description: Multi-Alert Fall-Detection Device for Senior Citizens
-img: assets/img/3.jpg
+img: assets/img/Screenshot_2019-11-29_at_9_35_16_AM.png
 importance: 2
 category: work
 giscus_comments: true
@@ -16,7 +16,7 @@ One in four adults aged 65+ fall every year. I developed a multi-alert fall dete
     </div>
 </div>
 <div class="caption">
-    **Fig 1.** Scheduling and Sequence of actions for entire device.
+    Fig 1. Scheduling and Sequence of actions for entire device.
 </div>
 
 ## Motivation
@@ -39,7 +39,7 @@ The device stands out from other products as it alerts relatives within the hous
     </div>
 </div>
 <div class="caption">
-    **Fig 2.** On the left, we see the inner components of the device. On the right, we see the outer casing for the device.
+    Fig 2. On the left, we see the inner components of the device. On the right, we see the outer casing for the device.
 </div>
 
 
