@@ -4,7 +4,6 @@ title: about
 permalink: /
 subtitle: kb553@cornell.edu
 # <a href='#'>Affiliations</a>. 
-cv_pdf: example_pdf.pdf
 profile:
   align: right
   image: prof_pic.jpg
@@ -13,7 +12,8 @@ profile:
     <p>Ithaca, NY, 14850</p>
   # <p>123 your address street</p>
   # <p>Your City, State 12345</p>
-
+  
+cv_pdf: example_pdf.pdf
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
