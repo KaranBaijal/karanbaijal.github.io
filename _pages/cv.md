@@ -10,3 +10,5 @@ redirect: https://drive.google.com/file/d/1mvYxmg5xxi2_pFNl8Lt--2vgO_KvDz6j/view
 toc:
   sidebar: left
 ---
+
+**Please wait for a few seconds for my resume to open up.**
