@@ -45,21 +45,5 @@ To supplement my research, I self-studied Griffith’s ‘Introduction to Elemen
 ## Isolation Metric
 After successfully completing this work, I began working on a new problem the group was facing. The DM model we are searching for predicts a pair of “isolated” electrons coming from the proton collision, meaning that there should be very few other particles measured nearby in the CMS detector. However, we observed minimal distinction between DM signals and SM backgrounds due to a flaw in how isolation is computed for low-momentum electrons. Thus, I began working on designing an algorithm to compute a corrected version of the isolation. I built on top of CERN’s existing public codebase and used specialized LHC physics analysis libraries to implement the algorithm. We expect the new isolation variable to improve signal vs. background discrimination 
 
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-
 ## Publication
 We aim to publish this research in March 2025 detailing the algorithm’s development, its application to the CMS dataset, and the resulting limits on dark matter models. 
