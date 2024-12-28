@@ -5,10 +5,11 @@ description: Multi-collaborative Task and Motion Planning with Feedback Loop usi
 img: assets/img/agent_image.jpg
 importance: 1
 category: work
+redirect: https://drive.google.com/file/d/1T1KxhNFctCJXlzzHDzTOufTQCMpRGuiW/view?usp=share_link
 related_publications: true
 ---
 ## Objective
-Develop a multi-agent, collaborative framework for task and motion planning of human agents with a self-feedback loop using the VirtualHome Simulator. We aim to 
+Develop a multi-agent, collaborative framework for task and motion planning of human agents with a self-feedback loop using the VirtualHome Simulator. 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
