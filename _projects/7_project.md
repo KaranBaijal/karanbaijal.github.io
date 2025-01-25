@@ -5,6 +5,7 @@ description: Material and Adjective Classification using Haptics and Vision
 img: assets/img/4.jpg
 importance: 1
 category: work
+redirect: https://drive.google.com/file/d/1rzpVZlt2BLw1Wf0sOP0_0WX0rACy6Ntr/view?usp=share_link
 related_publications: true
 ---
 
