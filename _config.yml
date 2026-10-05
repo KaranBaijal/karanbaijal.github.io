@@ -1,0 +1,18 @@
+title: Karan Baijal
+description: Robotics and machine learning research, projects, and writing by Karan Baijal.
+url: https://karanbaijal.github.io
+baseurl: ""
+timezone: America/Los_Angeles
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

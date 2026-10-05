@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include blog-head.html %}
+</head>
+<body class="blog-page">
+  <div class="blog-shell">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="blog-site-header">
+      <a class="blog-wordmark" href="{{ '/' | relative_url }}">Karan Baijal</a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}">Research</a>
+        <a href="{{ '/blog/' | relative_url }}" aria-current="page">Writing</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <article class="blog-article">
+        <header class="article-header">
+          <a class="article-back" href="{{ '/blog/' | relative_url }}">← All writing</a>
+          <p class="blog-eyebrow">Essay</p>
+          <h1>{{ page.title | escape }}</h1>
+          <p class="article-description">{{ page.description | escape }}</p>
+          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        </header>
+
+        <div class="article-body">
+          {{ content }}
+        </div>
+
+        {% if page.related_project_url and page.related_project %}
+        <aside class="article-related" aria-label="Related research">
+          <span>Related research</span>
+          <a href="{{ page.related_project_url }}">{{ page.related_project | escape }} <span aria-hidden="true">↗</span></a>
+        </aside>
+        {% endif %}
+        <p class="article-return"><a href="{{ '/blog/' | relative_url }}">← Back to all writing</a></p>
+      </article>
+    </main>
+
+    <footer class="blog-footer">
+      <span>© {{ site.time | date: '%Y' }} Karan Baijal</span>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
+    </footer>
+  </div>
+</body>
+</html>

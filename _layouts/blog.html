@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include blog-head.html %}
+</head>
+<body class="blog-page">
+  <div class="blog-shell">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="blog-site-header">
+      <a class="blog-wordmark" href="{{ '/' | relative_url }}">Karan Baijal</a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}">Research</a>
+        <a href="{{ '/blog/' | relative_url }}" aria-current="page">Writing</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <header class="blog-intro">
+        <p class="blog-eyebrow">Writing</p>
+        <h1>Notes on building intelligent machines.</h1>
+        <p>Essays on robotics, perception, and embodied AI, grounded in research and hands-on work.</p>
+      </header>
+
+      {% if site.posts.size > 0 %}
+      <section class="blog-archive" aria-label="Articles">
+        {% for post in site.posts %}
+        <article class="blog-list-item">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+          <p>{{ post.description | escape }}</p>
+        </article>
+        {% endfor %}
+      </section>
+      {% else %}
+      <section class="blog-empty" aria-label="Upcoming writing">
+        <h2>First essay coming soon.</h2>
+        <p>I’m preparing practical notes from my work in robotics and machine learning. In the meantime, you can explore my research and projects.</p>
+        <a href="{{ '/' | relative_url }}">Explore research <span aria-hidden="true">↗</span></a>
+      </section>
+      {% endif %}
+    </main>
+
+    <footer class="blog-footer">
+      <span>© {{ site.time | date: '%Y' }} Karan Baijal</span>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>
+    </footer>
+  </div>
+</body>
+</html>

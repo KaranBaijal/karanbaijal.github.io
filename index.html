@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -8,7 +10,7 @@
 
   <meta name="author" content="Karan Baijal">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
@@ -49,7 +51,8 @@
                     <a href="data/KaranBaijalCornellRoboticsResume.pdf">Robotics CV</a> &nbsp;/&nbsp;
                     <a href="data/KaranBaijalCornellResume.pdf">ML CV</a> &nbsp;/&nbsp;
                     <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
-                    <a href="https://github.com/karanbaijal/">Github</a>
+                    <a href="https://github.com/karanbaijal/">Github</a> &nbsp;/&nbsp;
+                    <a href="{{ '/blog/' | relative_url }}">Writing</a>
                   </p>
                 </td>
                 <td style="padding:2.5%;width:37%;max-width:37%">
@@ -60,6 +63,23 @@
               </tr>
             </tbody>
           </table>
+          <section class="home-writing" aria-labelledby="writing-heading">
+            <h2 id="writing-heading">Writing</h2>
+            <p>Notes on robotics, perception, and embodied AI, grounded in research and hands-on work.</p>
+            {% if site.posts.size > 0 %}
+            <div class="home-writing-list">
+              {% for post in site.posts limit:2 %}
+              <article>
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+              </article>
+              {% endfor %}
+            </div>
+            {% else %}
+            <p class="home-writing-empty">First essay coming soon.</p>
+            {% endif %}
+            <a class="home-writing-link" href="{{ '/blog/' | relative_url }}">Explore writing <span aria-hidden="true">→</span></a>
+          </section>
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
