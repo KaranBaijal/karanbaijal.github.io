@@ -183,6 +183,32 @@ span.highlight {
   font-weight: 700;
 }
 
+/* Experience on the existing homepage */
+.home-experience {
+  margin: 0 16px 24px;
+  padding: 22px 0 8px;
+  border-top: 1px solid #e7e9ec;
+}
+
+.home-experience article {
+  margin-top: 18px;
+}
+
+.home-experience h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.home-experience-role {
+  margin: 5px 0 12px;
+  color: #68717a;
+}
+
+.home-experience article > p:last-child {
+  max-width: 720px;
+  line-height: 1.6;
+}
+
 /* Writing archive and article pages */
 .blog-page {
   margin: 0;
