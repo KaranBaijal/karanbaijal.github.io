@@ -204,9 +204,22 @@ span.highlight {
   color: #68717a;
 }
 
-.home-experience article > p:last-child {
-  max-width: 720px;
+.home-experience-details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 24px;
+  align-items: start;
+}
+
+.home-experience-details p {
+  margin: 0;
   line-height: 1.6;
+}
+
+.home-experience-details img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Writing archive and article pages */
@@ -506,6 +519,15 @@ span.highlight {
 }
 
 @media (max-width: 600px) {
+  .home-experience-details {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .home-experience-details img {
+    max-width: 420px;
+  }
+
   .blog-shell {
     width: min(100% - 36px, 800px);
   }
