@@ -191,6 +191,10 @@ span.highlight {
 }
 
 .home-experience article {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
   margin-top: 18px;
 }
 
@@ -204,21 +208,15 @@ span.highlight {
   color: #68717a;
 }
 
-.home-experience-details {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 260px;
-  gap: 24px;
-  align-items: start;
-}
-
-.home-experience-details p {
+.home-experience-copy > p:last-child {
   margin: 0;
   line-height: 1.6;
 }
 
-.home-experience-details img {
+.home-experience-image {
   display: block;
-  width: 100%;
+  width: 160px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -519,13 +517,9 @@ span.highlight {
 }
 
 @media (max-width: 600px) {
-  .home-experience-details {
+  .home-experience article {
     grid-template-columns: 1fr;
     gap: 16px;
-  }
-
-  .home-experience-details img {
-    max-width: 420px;
   }
 
   .blog-shell {
